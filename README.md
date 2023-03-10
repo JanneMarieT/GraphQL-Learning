@@ -46,9 +46,10 @@ dependencies that needs to be installed:
 In school we used postman to test the API:
 
 POST HTTP method 
-__mutation (changes the data)__
+* __mutation (changes the data)__
 
-To create a student: (also posible to do the same with teacher and school) 
+
+* To create a student: (also posible to do the same with teacher and school) 
 -    mutation {
 -        createStudent(FirstName:"John", LastName: "Doe", SchoolId:1) {
 -           FirstName,
@@ -56,15 +57,17 @@ To create a student: (also posible to do the same with teacher and school)
 -      }
 -   }
 
-To delete a student: (also posible to do the same with teacher and school) 
+
+* To delete a student: (also posible to do the same with teacher and school) 
 -   mutation {
 -       deleteStudent(id:1) {
 -           FirstName,
 -       }
 -   }
 
+
 __(not mutation)__
-To show all students: (also posible to do the same with teacher and school) 
+* To show all students: (also posible to do the same with teacher and school) 
 -    {
 -        getStudents {
 -            FirstName,
