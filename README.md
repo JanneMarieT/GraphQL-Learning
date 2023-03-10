@@ -6,6 +6,7 @@ GraphQL learning
 # What is GraphQL
 
 GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. 
+
 GraphQL provides a complete and understandable description of the data in your API, which gives you the power to ask for exactly what you need and nothing more. 
 
 ##### Description
@@ -50,30 +51,30 @@ POST HTTP method
 
 
 * To create a student: (also posible to do the same with teacher and school) 
--    mutation {
--        createStudent(FirstName:"John", LastName: "Doe", SchoolId:1) {
--           FirstName,
--           LastName
--      }
--   }
+    -    mutation {
+    -        createStudent(FirstName:"John", LastName: "Doe", SchoolId:1) {
+    -           FirstName,
+    -           LastName
+    -      }
+    -   }
 
 
 * To delete a student: (also posible to do the same with teacher and school) 
--   mutation {
--       deleteStudent(id:1) {
--           FirstName,
--       }
--   }
+    -   mutation {
+    -   deleteStudent(id:1) {
+    -       FirstName,
+    -       }
+    -   }
 
 
 __(not mutation)__
 * To show all students: (also posible to do the same with teacher and school) 
--    {
--        getStudents {
--            FirstName,
--            LastName
--        }
--    }
+    -    {
+    -        getStudents {
+    -            FirstName,
+    -            LastName
+    -        }
+    -    }
 
 
 
