@@ -17,58 +17,60 @@ GraphQL provides a complete and understandable description of the data in your A
 
 .env file not included:
 
-HOST = "localhost"
-ADMIN_USERNAME = "Admin"
-ADMIN_PASSWORD = "Pasword"
-DATABASE_NAME = "School"
-DIALECT = "mysql"
-DIALECTMODEL = "mysql2"
-PORT = "3000"
+- HOST = "localhost"
+- ADMIN_USERNAME = "Admin"
+- ADMIN_PASSWORD = "Pasword"
+- DATABASE_NAME = "School"
+- DIALECT = "mysql"
+- DIALECTMODEL = "mysql2"
+- PORT = "3000"
 
 In MySQL you need to first create a database:
-CREATE DATABASE School;
+
+- CREATE DATABASE School;
 
 ## dependencies
 
 dependencies that needs to be installed:
-    dotenv: ^16.0.3,
-    express: ^4.18.2,
-    express-graphql: ^0.12.0,
-    graphql: ^16.6.0,
-    mysql: ^2.18.1,
-    mysql2: ^3.2.0,
-    sequelize: ^6.28.0
 
-# Postman
+-   dotenv: ^16.0.3,
+-   express: ^4.18.2,
+-   express-graphql: ^0.12.0,
+-   graphql: ^16.6.0,
+-   mysql: ^2.18.1,
+-   mysql2: ^3.2.0,
+-   sequelize: ^6.28.0
+
+## Postman
 
 In school we used postman to test the API:
 
 POST HTTP method 
-- mutation (changes the data)
+__mutation (changes the data)__
 
 To create a student: (also posible to do the same with teacher and school) 
-    mutation {
-        createStudent(FirstName:"John", LastName: "Doe", SchoolId:1) {
-            FirstName,
-            LastName
-        }
-    }
+-    mutation {
+-        createStudent(FirstName:"John", LastName: "Doe", SchoolId:1) {
+-           FirstName,
+-           LastName
+-      }
+-   }
 
 To delete a student: (also posible to do the same with teacher and school) 
-    mutation {
-        deleteStudent(id:1) {
-            FirstName,
-        }
-    }
+-   mutation {
+-       deleteStudent(id:1) {
+-           FirstName,
+-       }
+-   }
 
-- (not mutation)
+__(not mutation)__
 To show all students: (also posible to do the same with teacher and school) 
-    {
-        getStudents {
-            FirstName,
-            LastName
-        }
-    }
+-    {
+-        getStudents {
+-            FirstName,
+-            LastName
+-        }
+-    }
 
 
 
