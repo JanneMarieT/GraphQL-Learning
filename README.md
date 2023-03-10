@@ -3,20 +3,26 @@ GraphQL learning
 
 ![GraphQL](GraphQL.png)
 
-# What is GraphQL
+### What is GraphQL
 
 GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data. 
 
 GraphQL provides a complete and understandable description of the data in your API, which gives you the power to ask for exactly what you need and nothing more. 
 
-##### Description
+### Description
 
 * Simple lay out of the GraphQL we are learning in school
     - School
     - Student
     - Teacher
 
-.env file not included:
+In MySQL you need to first create a database:
+
+- CREATE DATABASE School;
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+*.env file not included:*
 
 - HOST = "localhost"
 - ADMIN_USERNAME = "Admin"
@@ -26,13 +32,9 @@ GraphQL provides a complete and understandable description of the data in your A
 - DIALECTMODEL = "mysql2"
 - PORT = "3000"
 
-In MySQL you need to first create a database:
+## Dependencies
 
-- CREATE DATABASE School;
-
-## dependencies
-
-dependencies that needs to be installed:
+Dependencies that needs to be installed:
 
 -   dotenv: ^16.0.3,
 -   express: ^4.18.2,
